@@ -1,0 +1,17 @@
+<h2 id="storeHeading">{{store.name}}</h2>
+
+<p id="brickColors">We currently carry {{store.brickColors.length}} color choices!</p>
+
+<ul id="colorList">
+  <li id="color-{{color}}" class="row" ng-repeat="(color, details) in store.bricks">{{color}}
+    <ul>
+      <li class="col-sm-3 well brick-{{size}}" ng-repeat="(size, info) in details">
+        <p class="size">Size: {{size}}</p>
+        <p class="quantity">Quantity: {{info.quantity}}</p>
+        <p class="price">Price: {{info.price}}</p>
+        <button class="buyButton">Buy</button>
+        <button class="returnButton">Return</button>
+      </li>
+    </ul>
+  </li>
+</ul>
