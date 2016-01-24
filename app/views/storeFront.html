@@ -10,8 +10,8 @@
         <p class="quantity">Quantity: {{info.quantity}}</p>
         <p class="price">Price: {{info.price}}</p>
         <p ng-if="info.quantity < 5" class="coming-soon">More on the way!</p>
-        <button class="buyButton">Buy</button>
-        <button class="returnButton">Return</button>
+        <button class="buyButton" ng-click="store.buy(color, size)">Buy</button>
+        <button class="returnButton" ng-click="store.return(color, size)">Return</button>
       </li>
     </ul>
   </li>
