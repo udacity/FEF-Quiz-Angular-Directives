@@ -1,0 +1,132 @@
+[{
+  "name": "Controller Quiz",
+  "code": "madSkillz",
+  "tests": [
+    {
+      "description": "Store heading exists with id storeHeading",
+      "definition": {
+        "nodes": "#storeHeading",
+        "get": "innerHTML",
+        "hasSubstring": "Udaci-Block Superstore"
+      }
+    },
+    {
+      "description": "Template displays number of available bricks",
+      "definition": {
+        "nodes": "#brickColors",
+        "get": "innerHTML",
+        "hasSubstring": "16"
+      }
+    },
+    {
+      "description": "The colors list with id `colorList` exists",
+      "definition": {
+        "nodes": "#colorList",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `color-Red` list item exists",
+      "definition": {
+        "nodes": "#color-Red",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `color-Blue` list item exists",
+      "definition": {
+        "nodes": "#color-Blue",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The `color-Green` list item exists",
+      "definition": {
+        "nodes": "#color-Green",
+        "attribute": "id",
+        "exists": true
+      }
+    },
+    {
+      "description": "The individual brick items have the correct class",
+      "definition": {
+        "nodes": ".brick-2x2",
+        "get": "count",
+        "equals": 2
+      }
+    },
+    {
+      "description": "A brick items displays its size",
+      "definition": {
+        "nodes": ".brick-36x12",
+        "get": "innerHTML",
+        "hasSubstring": "36x12"
+      }
+    },
+    {
+      "description": "A brick items displays its quantity",
+      "definition": {
+        "nodes": ".brick-36x12",
+        "get": "innerHTML",
+        "hasSubstring": "24"
+      }
+    },
+    {
+      "description": "A brick items displays its price",
+      "definition": {
+        "nodes": ".brick-36x12",
+        "get": "innerHTML",
+        "hasSubstring": "2.99"
+      }
+    },
+    {
+      "description": "Items with a quantity less than 10 have the `low-stock` class",
+      "definition": {
+        "nodes": ".low-stock",
+        "get": "count",
+        "equals": 2
+      }
+    },
+    {
+      "description": "Items with a quantity less than 5 have the `coming-soon` class",
+      "definition": {
+        "nodes": ".coming-soon",
+        "get": "count",
+        "equals": 1
+      }
+    },
+    {
+      "description": "Each item has a Buy button",
+      "definition": {
+        "nodes": ".buyButton",
+        "get": "count",
+        "equals": 9
+      }
+    },
+    {
+      "description": "Each item has a Return button",
+      "definition": {
+        "nodes": ".returnButton",
+        "get": "count",
+        "equals": 9
+      }
+    },
+    {
+      "description": "Clicking the Buy button reduces an item's quantity",
+      "definition": {
+        "waitForEvent": "buy-button-works",
+        "exists": true
+      }
+    },
+    {
+      "description": "Clicking the Return button increases an item's quantity",
+      "definition": {
+        "waitForEvent": "return-button-works",
+        "exists": true
+      }
+    }
+  ]
+}]

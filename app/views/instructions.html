@@ -1,0 +1,43 @@
+<div class="jumbotron">
+  <h1>Directives Quiz</h1>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h2>Instructions</h2>
+  <ul>
+    <li>Review the legoStore Controller</li>
+    <li>Create a "storeFront.html" template in the "views" directory</li>
+    <li>In the storeFront template, use expressions and directives to:
+      <ul>
+        <li>display the Store's name in a heading - <code>ID</code> of <code>storeHeading</code></li>
+        <li>display the number of brick colors offered - <code>ID</code> of <code>brickColors</code></li>
+        <li>display a list of the colors - <code>ID</code> of <code>colorList</code></li>
+        <li>each color should have an <code>ID</code> with "color-" in front of it (e.g. <code>color-Red</code>, <code>color-Blue</code>, <code>color-Green</code>, etc.)</li>
+        <li>a color should have an item for each brick size</li>
+        <li>each brick size should have a <code>class</code> with "brick-" in front of it (e.g. <code>brick-1x2</code>, <code>brick-2x4</code>, <code>brick-2x6</code>, etc.)</li>
+        <li>for each size, display the:
+          <ul>
+            <li>size, quantity, and price</li>
+            <li>if the quantity is below 10, add the <code>low-stock</code> <code>class</code> to this item</li>
+            <li>if the quantity is below 5, display a message with the <code>class</code> <code>coming-soon</code> that tells the user more is on the way</li>
+            <li>create a "Buy" button
+              <ul>
+                <li>give it the <code>class</code> <code>buyButton</code></li>
+                <li>create a <code>buy</code> function in the legoStore controller that will increase the brick's quantity by one</li>
+                <li>add a click handler to the button that will call the controller's <code>buy</code> function</li>
+              </ul>
+            </li>
+            <li>create a "Return" button
+              <ul>
+                <li>give it the <code>class</code> <code>returnButton</code></li>
+                <li>create a <code>return</code> function in the legoStore controller that will decrease the brick's quantity by one</li>
+                <li>add a click handler to the button that will call the controller's <code>return</code> function</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
