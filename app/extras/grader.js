@@ -1,7 +1,7 @@
 try {
   var brick = document.querySelector('.brick-1x1');
-  var buyButton = brick.querySelectorAll('button')[0];
-  var returnButton = brick.querySelectorAll('button')[1];
+  var buyButton = brick.querySelectorAll('button.buyButton')[0];
+  var returnButton = brick.querySelectorAll('button.returnButton')[0];
   var itemsShouldBeReturned = false;
 
   buyButton.click();
